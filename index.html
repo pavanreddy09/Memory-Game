@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/37304514cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h1>MEMORY GAME <i class="fa-solid fa-ghost"></i></h1>
+    </div>
+    <div class="container">
+      <div class="res">
+        <div>
+          <h2>Matched: <span class="matchnum">0</span></h2>
+        </div>
+        <div>
+          <h2>Attempt left: <span class="attemptnum">0</span></h2>
+        </div>
+      </div>
+      <div class="box"></div>
+      <div class="start">
+        <form>
+          <div class="greet">
+            <h2>WELLCOME</h2>
+            <h3>
+              &#129300; In how many attempt will you match all cards? Select the
+              Attempts
+            </h3>
+          </div>
+          <div class="input-div">
+            <label for="attempt">Number: <code>6 >= Number <= 20 </code></label>
+            <input
+              type="number"
+              name="attempt"
+              placeholder="Enter Number Greater Than 6 And Less Than 20"
+              required
+            />
+          </div>
+          <div class="btn-div">
+            <button>Start</button>
+          </div>
+        </form>
+      </div>
+      <div class="final hide">
+        <div class="finaldis">
+          <h1 class="finalresult"></h1>
+          <button onclick="restart()">Restart</button>
+        </div>
+      </div>
+      <div class="bgtrans"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

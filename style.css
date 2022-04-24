@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.head {
+  height: 60px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+img {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.box {
+  height: 300px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.res {
+  height: 70px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+.start,
+.final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -282px;
+  /* background-color: gray; */
+  /* filter: opacity(0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-color: grey;
+  height: 310px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 17px;
+  margin-top: 7px;
+  outline: none;
+  caret-color: red;
+  border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+input:focus {
+  box-shadow: rgb(18, 2, 247) 0px 0px 0px 3px;
+}
+label {
+  font-size: 17px;
+}
+.bgtrans {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -282px;
+  background-color: black;
+  filter: opacity(0.7);
+  z-index: -1;
+}
+.greet {
+  width: 100%;
+  text-align: center;
+}
+.greet h3 {
+  margin-top: 10px;
+}
+.input-div {
+  margin-top: 30px;
+}
+.btn-div {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  padding: 14px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.hide {
+  display: none;
+}
+.final {
+  flex-direction: column;
+  background-color: grey;
+  color: white;
+}
+.final button {
+  margin-top: 30px;
+}
+.finaldis {
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 400px;
+  }
+  form {
+    height: 350px;
+    width: 350px;
+  }
+  img {
+    height: 120px;
+    width: 120px;
+  }
+  .res {
+    width: 350px;
+    margin-right: 0px;
+  }
+  .finaldis {
+    text-align: center;
+    width: 350px;
+  }
+}
